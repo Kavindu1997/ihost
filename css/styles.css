@@ -1,11 +1,13 @@
 :root {
-  --color-primary: #283618;
-  --color-secondary: #606c38;
-  --color-accent: #0f4c5c;
+  --color-primary: #006b61;
+  --color-secondary: #449f66;
+  --color-accent: #92b34a;
   --color-headings: #2a2c24;
   --color-body: #575a4b;
   --color-body-darker: #3c3d38;
   --color-border: #ccc;
+  --color-callout: #c8a84e;
+  --color-callout-darker: #70583e;
   --border-radius: 30px;
 }
 
@@ -226,7 +228,7 @@ a {
 }
 
 .btn--primary:hover {
-  background: #151c0d;
+  background: #034e47;
 }
 
 .btn--secondary {
@@ -235,7 +237,7 @@ a {
 }
 
 .btn--secondary:hover {
-  background: #778645;
+  background: #4cbb75;
 }
 
 .btn--accent {
@@ -244,7 +246,7 @@ a {
 }
 
 .btn--accent:hover {
-  background: #0a333d;
+  background: #718a3b;
 }
 
 .btn--outline {
@@ -267,6 +269,15 @@ a {
 .btn--block {
   width: 100%;
   display: inline-block;
+}
+
+.btn--callout {
+  background: var(--color-callout-darker);
+  color: #fff;
+}
+
+.btn--callout:hover {
+  background: #947048;
 }
 
 @media screen and (min-width: 1024px) {
@@ -541,7 +552,7 @@ a {
 }
 
 .callout--primary {
-  background: var(--color-primary);
+  background: var(--color-callout);
   color: #fff;
 }
 
@@ -558,6 +569,10 @@ a {
 
 .callout__content {
   text-align: center;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
 
 @media screen and (min-width: 768px) {
